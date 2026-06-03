@@ -1,0 +1,148 @@
+baseURL: https://aitoolscompare.xyz/
+locale: en-us
+title: AI Tools Compare
+theme: PaperMod
+
+enableRobotsTXT: true
+enableEmoji: true
+paginate: 9
+summaryLength: 30
+
+# Google Analytics — replace with your ID when ready
+# googleAnalytics: G-XXXXXXXXXX
+
+params:
+  env: production
+  title: AI Tools Compare
+  description: >-
+    In-depth, unbiased comparisons of the best AI tools for coding, writing,
+    image generation, and more. Save time and money — find the right tool for
+    your specific needs.
+  keywords:
+    - AI tools
+    - AI comparison
+    - coding AI
+    - AI writing
+    - AI image generator
+    - chatbot comparison
+    - Claude vs GPT
+  author: AI Tools Compare
+  DateFormat: January 2, 2006
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  # Post display
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true
+  ShowToc: true
+  TocOpen: true
+
+  # Home page hero
+  homeInfoParams:
+    Title: "Compare AI Tools, Make Smarter Choices \U0001F916"
+    Content: >-
+      In-depth, hands-on comparisons of the best AI tools — coding assistants,
+      image generators, writing tools, and chatbots. We test them head-to-head
+      so you can pick the right one in minutes, not days.
+
+  # Social links (footer + header)
+  socialIcons:
+    - name: github
+      url: https://github.com/Linanxi12/aitoolscompare
+    - name: rss
+      url: /index.xml
+
+  # AdSense — replace with your IDs when approved
+  # adsense:
+  #   client: ca-pub-XXXXXXXXXXXXXXXX
+  #   slot: XXXXXXXXXX
+
+  # Schema.org / SEO
+  schema:
+    type: Organization
+    name: AI Tools Compare
+    url: https://aitoolscompare.xyz/
+
+  # Edit post link (optional)
+  editPost:
+    URL: https://github.com/Linanxi12/aitoolscompare/blob/main/content
+    Text: Suggest Changes
+    appendFilePath: true
+
+  # Search (Fuse.js — built into PaperMod)
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+
+menu:
+  main:
+    - identifier: posts
+      name: All Comparisons
+      url: /posts/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+
+taxonomies:
+  category: categories
+  tag: tags
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    style: monokai
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: false
+    respectDoNotTrack: true
+  instagram:
+    disable: true
+  x:
+    disable: false
+    enableDNT: true
+  vimeo:
+    disable: true
+  youtube:
+    disable: false
+    privacyEnhanced: true
