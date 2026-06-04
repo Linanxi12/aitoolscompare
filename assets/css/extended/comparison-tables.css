@@ -307,3 +307,31 @@
   color: var(--primary);
   margin-bottom: 0.5rem;
 }
+
+/* ---------- Weight Adjustment Note ---------- */
+.weight-note {
+  background: var(--entry);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.82rem;
+  color: var(--secondary);
+  line-height: 1.5;
+}
+
+.weight-note strong {
+  color: var(--primary);
+}
+
+/* ---------- Source Citation ---------- */
+.source-citation {
+  font-size: 0.78rem;
+  color: var(--tertiary);
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0.75rem;
+  border-left: 3px solid var(--border);
+  background: var(--entry);
+  border-radius: 0 6px 6px 0;
+}
