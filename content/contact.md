@@ -19,7 +19,7 @@ The easiest way to reach us is through GitHub:
 
 ### Email
 
-You can also email us at: **contact@aitoolscompare.xyz**
+You can also email us at: **contact@aitools-hub.xyz**
 
 We aim to respond within 2-3 business days.
 

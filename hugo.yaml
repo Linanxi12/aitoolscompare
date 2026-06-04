@@ -1,4 +1,4 @@
-baseURL: https://aitoolscompare.xyz/
+baseURL: https://aitools-hub.xyz/
 locale: en-us
 title: AI Tools Compare
 theme: PaperMod
@@ -67,7 +67,7 @@ params:
   schema:
     type: Organization
     name: AI Tools Compare
-    url: https://aitoolscompare.xyz/
+    url: https://aitools-hub.xyz/
 
   # Edit post link (optional)
   editPost:
