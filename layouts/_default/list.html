@@ -111,7 +111,18 @@
   </header>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
+    {{- if .Description }}
+    <p>{{ .Description | markdownify }}</p>
+    {{- else }}
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    {{- end }}
+    <div class="entry-categories" style="margin-top:0.5rem;font-size:0.8rem;">
+      {{- $categories := .Language.Params.Taxonomies.category | default "categories" }}
+      {{- range (.GetTerms $categories) }}
+      <a href="{{ .Permalink }}" style="color:var(--secondary);text-decoration:none;margin-right:0.5rem;">#{{ .LinkTitle }}</a>
+      {{- end }}
+    </div>
+    <a href="{{ .Permalink }}" style="display:inline-block;margin-top:0.5rem;font-size:0.85rem;font-weight:600;">Read full comparison →</a>
   </div>
   {{- end }}
   {{- if not (.Param "hideMeta") }}

@@ -1,0 +1,21 @@
+{{- $related := where (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) "Permalink" "!=" .Permalink }}
+{{- $related = where $related "Params.categories" "intersect" .Params.categories | first 3 }}
+{{- if $related }}
+<aside class="related-posts" style="margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);">
+  <h3 style="font-size:1.1rem;margin-bottom:1rem;">More Comparisons in {{ range first 1 (.GetTerms "categories") }}<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>{{ end }}</h3>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;">
+    {{- range $related }}
+    <a href="{{ .Permalink }}" style="text-decoration:none;color:inherit;background:var(--entry);border-radius:8px;padding:1rem;transition:transform 0.15s;display:block;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+      <div style="font-weight:600;font-size:0.9rem;margin-bottom:0.3rem;">{{ .Title }}</div>
+      <div style="font-size:0.78rem;color:var(--secondary);">
+        {{- if .Description }}
+        {{ .Description | truncate 100 }}
+        {{- else }}
+        {{ .Summary | plainify | truncate 100 }}
+        {{- end }}
+      </div>
+    </a>
+    {{- end }}
+  </div>
+</aside>
+{{- end }}
