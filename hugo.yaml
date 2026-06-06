@@ -47,9 +47,15 @@ params:
   homeInfoParams:
     Title: "Compare AI Tools, Make Smarter Choices \U0001F916"
     Content: >-
-      In-depth, hands-on comparisons of the best AI tools — coding assistants,
-      image generators, writing tools, and chatbots. We test them head-to-head
-      so you can pick the right one in minutes, not days.
+      In-depth, unbiased comparisons of AI coding assistants, image generators,
+      writing tools, and video models — with a <strong>public scoring framework</strong>
+      and <strong>cited data sources</strong> for every test.<br><br>
+      <span style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;font-size:0.9rem;">
+      <span>\U0001F4CA <strong>10</strong> Comparisons</span>
+      <span>\U0001F4C2 <strong>4</strong> Categories</span>
+      <span>\U0001F3AF <strong>12</strong> Weighted Dimensions</span>
+      <span>\U0001F4DD <strong>1</strong> Public Scoring Framework</span>
+      </span>
 
   # Social links (footer + header)
   socialIcons:
