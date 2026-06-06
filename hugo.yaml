@@ -51,10 +51,10 @@ params:
       writing tools, and video models — with a <strong>public scoring framework</strong>
       and <strong>cited data sources</strong> for every test.<br><br>
       <span style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;font-size:0.9rem;">
-      <span>\U0001F4CA <strong>10</strong> Comparisons</span>
-      <span>\U0001F4C2 <strong>4</strong> Categories</span>
-      <span>\U0001F3AF <strong>12</strong> Weighted Dimensions</span>
-      <span>\U0001F4DD <strong>1</strong> Public Scoring Framework</span>
+      <a href="/posts/" style="text-decoration:none;color:inherit;">📊 <strong>10</strong> Comparisons</a>
+      <a href="/categories/" style="text-decoration:none;color:inherit;">📂 <strong>4</strong> Categories</a>
+      <a href="/about/#how-we-test" style="text-decoration:none;color:inherit;">🎯 <strong>12</strong> Weighted Dimensions</a>
+      <a href="/about/#scoring-framework" style="text-decoration:none;color:inherit;">📝 <strong>1</strong> Public Scoring Framework</a>
       </span>
 
   # Social links (footer + header)
