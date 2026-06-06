@@ -61,6 +61,22 @@
     </footer>
 </article>
 
+<!-- Stats bar -->
+<div class="home-stats" style="display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center;margin:0 0 1.5rem;font-size:0.88rem;">
+  <a href="/posts/" style="text-decoration:none;color:inherit;background:var(--entry);border-radius:8px;padding:0.5rem 0.85rem;transition:transform 0.15s;display:inline-block;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+    &#x1F4CA; <strong>10</strong> Comparisons
+  </a>
+  <a href="/categories/" style="text-decoration:none;color:inherit;background:var(--entry);border-radius:8px;padding:0.5rem 0.85rem;transition:transform 0.15s;display:inline-block;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+    &#x1F4C2; <strong>4</strong> Categories
+  </a>
+  <a href="/about/#how-we-test" style="text-decoration:none;color:inherit;background:var(--entry);border-radius:8px;padding:0.5rem 0.85rem;transition:transform 0.15s;display:inline-block;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+    &#x1F3AF; <strong>12</strong> Weighted Dimensions
+  </a>
+  <a href="/about/#scoring-framework" style="text-decoration:none;color:inherit;background:var(--entry);border-radius:8px;padding:0.5rem 0.85rem;transition:transform 0.15s;display:inline-block;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+    &#x1F4DD; <strong>1</strong> Public Scoring Framework
+  </a>
+</div>
+
 {{ "<!-- Category Navigation -->" | safeHTML }}
 <div class="category-grid">
   {{- $categories := site.Taxonomies.categories }}

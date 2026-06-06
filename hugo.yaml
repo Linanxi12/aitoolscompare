@@ -49,13 +49,7 @@ params:
     Content: >-
       In-depth, unbiased comparisons of AI coding assistants, image generators,
       writing tools, and video models — with a <strong>public scoring framework</strong>
-      and <strong>cited data sources</strong> for every test.<br><br>
-      <span style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;font-size:0.9rem;">
-      <a href="/posts/" style="text-decoration:none;color:inherit;">📊 <strong>10</strong> Comparisons</a>
-      <a href="/categories/" style="text-decoration:none;color:inherit;">📂 <strong>4</strong> Categories</a>
-      <a href="/about/#how-we-test" style="text-decoration:none;color:inherit;">🎯 <strong>12</strong> Weighted Dimensions</a>
-      <a href="/about/#scoring-framework" style="text-decoration:none;color:inherit;">📝 <strong>1</strong> Public Scoring Framework</a>
-      </span>
+      and <strong>cited data sources</strong> for every test.
 
   # Social links (footer + header)
   socialIcons:
