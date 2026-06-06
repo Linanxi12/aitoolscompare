@@ -57,6 +57,11 @@ Every comparison article follows the same 6 sections:
 
 ## Who Runs This
 
-AI Tools Compare is built and maintained by an independent developer who spends way too much time testing AI tools. No VC funding, no content farm, no AI-generated filler — just honest comparisons written by someone who uses these tools daily.
+AI Tools Compare is built and maintained by **Guan Haoran**（管浩然）, an independent developer based in China. I've been working with AI tools since 2023 — building applications, comparing models, and trying to figure out which tools are actually worth paying for.
+
+No VC funding, no content farm, no AI-generated filler — just honest comparisons written by someone who uses these tools daily.
+
+- **GitHub:** [@Linanxi12](https://github.com/Linanxi12)
+- **Email:** contact@aitools-hub.xyz
 
 If you have suggestions or want a specific tool compared, [contact us](/contact/).
