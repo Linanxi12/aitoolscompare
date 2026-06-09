@@ -97,6 +97,7 @@
 </div>
 {{- end }}
 
+{{- if and .IsHome (eq $paginator.PageNumber 1) }}
 <!-- Popular Comparisons -->
 <div style="margin:0 0 1.5rem;">
   <h3 style="font-size:1rem;margin-bottom:0.75rem;color:var(--primary);">🔥 Popular Comparisons</h3>
@@ -115,6 +116,7 @@
     </a>
   </div>
 </div>
+{{- end }}
 
 {{- $term := .Data.Term }}
 {{- range $index, $page := $paginator.Pages }}
