@@ -4,8 +4,10 @@ date: 2026-06-05
 draft: false
 description: "Head-to-head: GPT-4o vs Gemini 2.5 Flash on coding depth, multimodal understanding, and real cost efficiency. The cheaper model isn't always cheaper."
 categories: ["coding"]
-tags: ["GPT-4o", "Gemini", "Gemini 3.5", "OpenAI", "Google", "benchmark", "multimodal", "coding"]
+tags: ["GPT-4o", "Gemini", "Gemini 2.5 Flash", "OpenAI", "Google", "benchmark", "multimodal", "coding"]
 affiliateNote: "Some links may earn us a commission at no extra cost to you."
+aliases:
+  - /posts/gpt55-vs-gemini35-flash/
 ShowToc: true
 TocOpen: true
 ---

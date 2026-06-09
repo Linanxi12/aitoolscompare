@@ -122,7 +122,7 @@ Scores are based on public benchmarks (HumanEval, SWE-bench, ProgramBench, Termi
 - ❌ Slow — 70 tokens/sec vs Gemini's 289
 - ❌ Weaker multimodal understanding (text-first architecture)
 
-**Read the full comparison:** [GPT-4o vs Gemini 2.5 Flash](/posts/gpt55-vs-gemini35-flash/)
+**Read the full comparison:** [GPT-4o vs Gemini 2.5 Flash](/posts/gpt4o-vs-gemini25-flash/)
 
 ---
 
@@ -150,7 +150,7 @@ Scores are based on public benchmarks (HumanEval, SWE-bench, ProgramBench, Termi
 - ❌ Verbose — burns 3× more tokens per task, erasing per-token savings
 - ❌ Terminal-Bench 76.2% — trails GPT-4o on deep coding
 
-**Read the full comparison:** [GPT-4o vs Gemini 2.5 Flash](/posts/gpt55-vs-gemini35-flash/)
+**Read the full comparison:** [GPT-4o vs Gemini 2.5 Flash](/posts/gpt4o-vs-gemini25-flash/)
 
 ---
 
@@ -220,7 +220,7 @@ The AI coding landscape shifts monthly. We update this page when major model upd
 
 - [Claude Opus 4 vs GPT-4o for Coding](/posts/claude-vs-gpt4-coding/)
 - [Cursor vs GitHub Copilot](/posts/cursor-vs-copilot/)
-- [GPT-4o vs Gemini 2.5 Flash](/posts/gpt55-vs-gemini35-flash/)
+- [GPT-4o vs Gemini 2.5 Flash](/posts/gpt4o-vs-gemini25-flash/)
 - [Copilot vs Codeium — Free vs Paid](/posts/copilot-vs-codeium/)
 
 ---

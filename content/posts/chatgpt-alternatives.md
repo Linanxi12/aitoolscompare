@@ -46,7 +46,7 @@ ChatGPT is the most popular AI chatbot — but it's not always the best choice f
 - **Price:** Free (Flash) / $20/mo Advanced
 - **Key strength:** 289 tok/s speed, native video/chart understanding
 
-**Read more:** [GPT-4o vs Gemini 2.5 Flash](/posts/gpt55-vs-gemini35-flash/)
+**Read more:** [GPT-4o vs Gemini 2.5 Flash](/posts/gpt4o-vs-gemini25-flash/)
 
 <div class="verdict-box">
   <strong>Switch from ChatGPT if:</strong> you process videos, charts, and visual documents, or need the fastest iteration speed.
@@ -175,6 +175,6 @@ ChatGPT is the most popular AI chatbot — but it's not always the best choice f
 ## Related Comparisons
 
 - [Claude vs GPT-4o for Coding](/posts/claude-vs-gpt4-coding/)
-- [GPT-4o vs Gemini 2.5 Flash](/posts/gpt55-vs-gemini35-flash/)
+- [GPT-4o vs Gemini 2.5 Flash](/posts/gpt4o-vs-gemini25-flash/)
 - [Best AI Coding Tools 2026](/posts/best-ai-coding-tools/)
 - [Best AI Writing Tools 2026](/posts/best-ai-writing-tools/)

@@ -6,6 +6,8 @@ description: "The ultimate face-off: GPT-4o (ProgramBench perfect, 1M context) v
 categories: ["coding"]
 tags: ["GPT-4o", "Claude", "Claude Opus", "OpenAI", "Anthropic", "coding", "benchmark", "AI model"]
 affiliateNote: "Some links may earn us a commission at no extra cost to you."
+aliases:
+  - /posts/gpt55-vs-claude-opus/
 ShowToc: true
 TocOpen: true
 ---
