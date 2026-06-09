@@ -29,7 +29,7 @@ Cursor is the best AI-native IDE in 2026 — but it's not the right fit for ever
 - **Key strength:** Works everywhere. Native GitHub integration (PRs, issues, code review). SOC 2 compliance.
 - **Models:** GPT-4o, Claude (limited)
 
-**Read more:** [Cursor vs Copilot](/posts/cursor-vs-copilot/) · [Copilot vs Codeium](/posts/copilot-vs-codeium/)
+**Read more:** [Cursor vs Copilot](/posts/cursor-vs-copilot/) · [Codeium vs GitHub Copilot](/posts/copilot-vs-codeium/)
 
 <div class="verdict-box">
   <strong>Switch from Cursor if:</strong> you use JetBrains or Neovim, need enterprise compliance, or want the cheapest paid option at $10/mo.

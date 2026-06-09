@@ -97,6 +97,25 @@
 </div>
 {{- end }}
 
+<!-- Popular Comparisons -->
+<div style="margin:0 0 1.5rem;">
+  <h3 style="font-size:1rem;margin-bottom:0.75rem;color:var(--primary);">🔥 Popular Comparisons</h3>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0.75rem;">
+    <a href="/posts/copilot-vs-codeium/" style="text-decoration:none;color:inherit;background:var(--entry);border-radius:8px;padding:0.75rem 1rem;transition:transform 0.15s;display:block;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+      <div style="font-weight:600;font-size:0.88rem;margin-bottom:0.25rem;">GitHub Copilot vs Codeium comparison</div>
+      <div style="font-size:0.78rem;color:var(--secondary);">Compare GitHub Copilot and Codeium on code completion quality, pricing, IDE support, and best use cases.</div>
+    </a>
+    <a href="/posts/gpt4o-vs-claude-opus/" style="text-decoration:none;color:inherit;background:var(--entry);border-radius:8px;padding:0.75rem 1rem;transition:transform 0.15s;display:block;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+      <div style="font-weight:600;font-size:0.88rem;margin-bottom:0.25rem;">GPT-4o vs Claude Opus 4 for coding</div>
+      <div style="font-size:0.78rem;color:var(--secondary);">Production code quality, debugging depth, context understanding — which model writes better code?</div>
+    </a>
+    <a href="/posts/flux-vs-midjourney/" style="text-decoration:none;color:inherit;background:var(--entry);border-radius:8px;padding:0.75rem 1rem;transition:transform 0.15s;display:block;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+      <div style="font-weight:600;font-size:0.88rem;margin-bottom:0.25rem;">Flux vs Midjourney v7</div>
+      <div style="font-size:0.78rem;color:var(--secondary);">The first open model to genuinely challenge Midjourney on aesthetics. See the side-by-side results.</div>
+    </a>
+  </div>
+</div>
+
 {{- $term := .Data.Term }}
 {{- range $index, $page := $paginator.Pages }}
 

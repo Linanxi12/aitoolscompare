@@ -168,20 +168,6 @@ Scores are based on public benchmarks (HumanEval, SWE-bench, ProgramBench, Termi
 
 ---
 
-### #7 Codeium (Windsurf) — ⭐ 7.3/10
-
-**Best for:** Developers who want the best free AI code assistant. Unlimited completions, 32K context, 15+ IDE support — all for $0.
-
-- ✅ Best free tier — unlimited completions, chat, 32K context
-- ✅ 15+ IDE support including Eclipse and Android Studio
-- ✅ $0 — no budget needed
-- ❌ Slightly less polished completions than Copilot
-- ❌ Weaker GitHub integration
-
-**Read the full comparison:** [Copilot vs Codeium](/posts/copilot-vs-codeium/)
-
----
-
 ## Comparison Table
 
 <div class="table-responsive">
