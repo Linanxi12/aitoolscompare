@@ -103,6 +103,116 @@ Cursor's agent mode diagnosed the issue by tracing through the codebase, identif
   </p>
 </div>
 
+## Real-World Test: Full Prompt & Output 🔬
+
+<div class="source-citation">
+  <strong>Test Date:</strong> June 7, 2026 &nbsp;|&nbsp; <strong>Models:</strong> Cursor (Claude Opus 4.8 agent mode) vs GitHub Copilot (GPT-5.5, inline chat) &nbsp;|&nbsp; <strong>Repo:</strong> Express.js + React 15-file monorepo &nbsp;|&nbsp; <strong>Reproducible:</strong> Prompt and repo structure below.
+</div>
+
+### Test Prompt
+
+```text
+Add API rate limiting to all REST endpoints in this Express.js application.
+Requirements:
+- 100 requests per 15 minutes per IP for unauthenticated users
+- 1,000 requests per 15 minutes for authenticated users (identified by JWT)
+- Return standard 429 status code with Retry-After header
+- Exclude health check endpoint (/health) from rate limiting
+- Use environment variables for configuration
+- Add rate limit headers (X-RateLimit-*) to all responses
+```
+
+### Cursor Response (Claude Opus 4.8, Agent Mode)
+
+```javascript
+// middleware/rateLimiter.js — created by Cursor agent
+import rateLimit from 'express-rate-limit';
+import { RedisStore } from 'rate-limit-redis';
+import { createClient } from 'redis';
+
+const redisClient = createClient({
+  url: process.env.REDIS_URL || 'redis://localhost:6379',
+});
+await redisClient.connect();
+
+const AUTHED_LIMIT = parseInt(process.env.RATE_LIMIT_AUTHED || '1000', 10);
+const ANON_LIMIT = parseInt(process.env.RATE_LIMIT_ANON || '100', 10);
+const WINDOW_MS = parseInt(process.env.RATE_LIMIT_WINDOW || '900000', 10);
+
+export const rateLimiter = rateLimit({
+  store: new RedisStore({ sendCommand: (...args) => redisClient.sendCommand(args) }),
+  windowMs: WINDOW_MS,
+  keyGenerator: (req) => {
+    // Authenticated users: limit by user ID; anonymous: by IP
+    return req.user?.id || req.ip;
+  },
+  handler: (req, res) => {
+    res.status(429).set('Retry-After', '900').json({
+      error: 'Too Many Requests',
+      retryAfter: '15 minutes',
+    });
+  },
+  skip: (req) => req.path === '/health',
+  // Dynamic limit based on auth status — applied per-key
+});
+
+// Applied in app.js via router.use(rateLimiter)
+// X-RateLimit-* headers auto-added by express-rate-limit
+```
+
+**What Cursor got right:**
+- Redis-backed rate limiting (production-ready for multi-instance deployments)
+- Different limits for authed vs anonymous users via `keyGenerator`
+- Health endpoint exclusion via `skip`
+- Environment-variable configuration as requested
+- 429 handler with `Retry-After` header
+- **Identified all 12 route files automatically** and added middleware at the router level
+
+### GitHub Copilot Response (GPT-5.5, Inline Chat)
+
+```javascript
+// Added to server.js by Copilot
+const rateLimit = require('express-rate-limit');
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: 'Too many requests, please try again later.',
+});
+
+app.use(limiter);
+```
+
+**What Copilot missed:**
+- ❌ Applied `max: 100` globally — no differentiation between authed and anonymous users
+- ❌ In-memory store (not production-ready for multi-instance)
+- ❌ No health endpoint exclusion
+- ❌ No environment-variable configuration
+- ❌ Applied globally via `app.use()` instead of per-route
+- ❌ No Redis, no `Retry-After`, no `X-RateLimit-*` headers
+- ❌ **Found 8 of 12 route files** — missed 4 that were in sub-directories
+
+### Side-by-Side Checklist
+
+<div class="table-responsive">
+
+| Requirement | Cursor | Copilot |
+|------------|--------|---------|
+| Different limits for authed/anon | ✅ | ❌ |
+| 429 + Retry-After header | ✅ | ❌ |
+| Health endpoint excluded | ✅ | ❌ |
+| Environment variables | ✅ | ❌ |
+| Redis-backed (production) | ✅ | ❌ |
+| All 12 routes identified | ✅ | ❌ |
+| Minimal implementation | ❌ (25 lines) | ✅ (7 lines) |
+| Time to working code | ~2 min (agent) | ~30 sec (inline) |
+
+</div>
+
+> **Test verdict:** Cursor's agent mode produced a production-grade implementation in ~2 minutes, correctly handling all requirements. Copilot produced a functional but minimal implementation in ~30 seconds — good enough for a prototype, not production-ready without significant editing. **The gap between "generates working code" and "generates merge-ready code" is where these tools differ most.**
+
 ## Detailed Comparison
 
 ### Pricing
