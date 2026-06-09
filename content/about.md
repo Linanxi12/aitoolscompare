@@ -1,14 +1,14 @@
 ---
-title: About AI Tools Compare
+title: About AI Tools Hub
 date: 2026-06-01
 description: "We help developers, product managers, and AI enthusiasts pick the right AI tool through hands-on, unbiased comparisons. Learn about our methodology."
 layout: page
 ShowBreadCrumbs: true
 ---
 
-## Why AI Tools Compare?
+## Why AI Tools Hub?
 
-Every week, dozens of new AI tools launch. Keeping up is exhausting. **AI Tools Compare** cuts through the noise with hands-on, side-by-side comparisons that answer one question: *Which tool should you use for your specific task?*
+Every week, dozens of new AI tools launch. Keeping up is exhausting. **AI Tools Hub** cuts through the noise with hands-on, side-by-side comparisons that answer one question: *Which tool should you use for your specific task?*
 
 ## How We Test
 
@@ -57,7 +57,7 @@ Every comparison article follows the same 6 sections:
 
 ## Who Runs This
 
-AI Tools Compare is built and maintained by **Guan Haoran**（管浩然）, an independent developer based in China. I've been working with AI tools since 2023 — building applications, comparing models, and trying to figure out which tools are actually worth paying for.
+AI Tools Hub is built and maintained by **Guan Haoran**（管浩然）, an independent developer based in China. I've been working with AI tools since 2023 — building applications, comparing models, and trying to figure out which tools are actually worth paying for.
 
 No VC funding, no content farm, no AI-generated filler — just honest comparisons written by someone who uses these tools daily.
 

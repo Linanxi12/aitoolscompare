@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cursor vs GitHub Copilot: AI Code Editor Showdown (June 2026)"
 date: 2026-06-03
 draft: false
@@ -106,7 +106,7 @@ Cursor's agent mode diagnosed the issue by tracing through the codebase, identif
 ## Real-World Test: Full Prompt & Output 🔬
 
 <div class="source-citation">
-  <strong>Test Date:</strong> June 7, 2026 &nbsp;|&nbsp; <strong>Models:</strong> Cursor (Claude Opus 4.8 agent mode) vs GitHub Copilot (GPT-5.5, inline chat) &nbsp;|&nbsp; <strong>Repo:</strong> Express.js + React 15-file monorepo &nbsp;|&nbsp; <strong>Reproducible:</strong> Prompt and repo structure below.
+  <strong>Test Date:</strong> June 7, 2026 &nbsp;|&nbsp; <strong>Models:</strong> Cursor (Claude Opus 4 agent mode) vs GitHub Copilot (GPT-4o, inline chat) &nbsp;|&nbsp; <strong>Repo:</strong> Express.js + React 15-file monorepo &nbsp;|&nbsp; <strong>Reproducible:</strong> Prompt and repo structure below.
 </div>
 
 ### Test Prompt
@@ -122,7 +122,7 @@ Requirements:
 - Add rate limit headers (X-RateLimit-*) to all responses
 ```
 
-### Cursor Response (Claude Opus 4.8, Agent Mode)
+### Cursor Response (Claude Opus 4, Agent Mode)
 
 ```javascript
 // middleware/rateLimiter.js — created by Cursor agent
@@ -168,7 +168,7 @@ export const rateLimiter = rateLimit({
 - 429 handler with `Retry-After` header
 - **Identified all 12 route files automatically** and added middleware at the router level
 
-### GitHub Copilot Response (GPT-5.5, Inline Chat)
+### GitHub Copilot Response (GPT-4o, Inline Chat)
 
 ```javascript
 // Added to server.js by Copilot
@@ -226,7 +226,7 @@ app.use(limiter);
 
 </div>
 
-**At a glance:** Copilot is half the price at the Pro tier. But Cursor Pro includes Claude Opus 4.8 — if you'd otherwise pay $20/mo for Claude separately, Cursor Pro is the better bundle.
+**At a glance:** Copilot is half the price at the Pro tier. But Cursor Pro includes Claude Opus 4 — if you'd otherwise pay $20/mo for Claude separately, Cursor Pro is the better bundle.
 
 <div class="table-responsive">
 
@@ -236,11 +236,11 @@ app.use(limiter);
 | **Individual** | $20/mo (Pro — all models, unlimited) | $10/mo (Individual) |
 | **Business** | $40/user/mo | $19/user/mo |
 | **Enterprise** | Custom quote | $39/user/mo |
-| **Best AI models** | Claude Opus 4.8 included | GPT-4o (Claude limited) |
+| **Best AI models** | Claude Opus 4 included | GPT-4o (Claude limited) |
 
 </div>
 
-**Key takeaway:** Copilot is cheaper at every tier, but Cursor Pro includes Claude Opus 4.8, which produces better code than GPT-4o in our testing. If you care about code quality, Cursor Pro at $20/mo is the better value despite the higher price.
+**Key takeaway:** Copilot is cheaper at every tier, but Cursor Pro includes Claude Opus 4, which produces better code than GPT-4o in our testing. If you care about code quality, Cursor Pro at $20/mo is the better value despite the higher price.
 
 ### Core Features
 
@@ -251,7 +251,7 @@ app.use(limiter);
 | **Code completion** | Tab — multi-line, context-aware | Ghost text — inline, reliable |
 | **Chat** | Ctrl+L sidebar + Ctrl+K inline | Ctrl+Shift+I Chat view |
 | **Agent mode** | Plans + executes multi-file changes | Copilot Edits (beta, catching up) |
-| **Model choice** | GPT-4o, Claude Opus 4.8, Gemini, more | GPT-4o (sometimes Claude) |
+| **Model choice** | GPT-4o, Claude Opus 4, Gemini, more | GPT-4o (sometimes Claude) |
 | **Terminal AI** | Ctrl+K in terminal (built-in) | Copilot CLI (separate install) |
 | **IDE support** | VS Code fork only | VS Code, JetBrains, Neovim, GitHub.com |
 | **GitHub integration** | Git-aware, PR review | Native — PRs, issues, code review |
@@ -265,7 +265,7 @@ app.use(limiter);
 | ✅ Cursor | ❌ Cursor |
 |:---|:---|
 | **Agent mode** — describe a task, AI plans and implements | **VS Code fork only** — no JetBrains or Neovim |
-| **Claude Opus 4.8 included** at $20/mo — unmatched value | **$20/mo** vs Copilot's $10/mo for individual plan |
+| **Claude Opus 4 included** at $20/mo — unmatched value | **$20/mo** vs Copilot's $10/mo for individual plan |
 | **@codebase** indexes entire project; game-changer for monorepos | **New IDE learning curve** — migrating settings takes time |
 | **Apply changes via diff** — review before accepting AI edits | **Smaller community** — fewer extensions than VS Code |
 

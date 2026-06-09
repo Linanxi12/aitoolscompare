@@ -1,7 +1,7 @@
 ---
 title: Contact
 date: 2026-06-01
-description: "Get in touch with AI Tools Compare. Suggest a comparison, report an error, or just say hello."
+description: "Get in touch with AI Tools Hub. Suggest a comparison, report an error, or just say hello."
 layout: page
 ShowBreadCrumbs: true
 ---

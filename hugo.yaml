@@ -1,6 +1,6 @@
 baseURL: https://aitools-hub.xyz/
 locale: en-us
-title: AI Tools Compare
+title: AI Tools Hub
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -13,7 +13,7 @@ summaryLength: 55
 
 params:
   env: production
-  title: AI Tools Compare
+  title: AI Tools Hub
   description: >-
     In-depth, unbiased comparisons of the best AI tools for coding, writing,
     image generation, and more. Save time and money — find the right tool for
@@ -26,7 +26,7 @@ params:
     - AI image generator
     - chatbot comparison
     - Claude vs GPT
-  author: AI Tools Compare
+  author: AI Tools Hub
   DateFormat: January 2, 2006
   defaultTheme: auto
   disableThemeToggle: false
@@ -66,7 +66,7 @@ params:
   # Schema.org / SEO
   schema:
     type: Organization
-    name: AI Tools Compare
+    name: AI Tools Hub
     url: https://aitools-hub.xyz/
 
   # Edit post link (optional)

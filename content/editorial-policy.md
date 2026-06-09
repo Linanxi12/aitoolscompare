@@ -1,7 +1,7 @@
 ---
 title: Editorial Policy
 date: 2026-06-06
-description: "How we create, maintain, and update comparisons at AI Tools Compare."
+description: "How we create, maintain, and update comparisons at AI Tools Hub."
 layout: page
 ShowBreadCrumbs: true
 ---

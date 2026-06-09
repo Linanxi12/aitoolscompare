@@ -1,7 +1,7 @@
 ---
 title: Terms of Use
 date: 2026-06-06
-description: "Terms and conditions for using AI Tools Compare."
+description: "Terms and conditions for using AI Tools Hub."
 layout: page
 ShowBreadCrumbs: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 date: 2026-06-06
-description: "How AI Tools Compare collects, uses, and protects your data."
+description: "How AI Tools Hub collects, uses, and protects your data."
 layout: page
 ShowBreadCrumbs: true
 ---

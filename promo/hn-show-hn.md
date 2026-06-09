@@ -1,4 +1,4 @@
-Show HN: AI Tools Compare — side-by-side comparisons of AI coding & image tools
+Show HN: AI Tools Hub — side-by-side comparisons of AI coding & image tools
 
 I built aitools-hub.xyz because I spend way too much time testing AI tools and wanted a structured way to compare them.
 
