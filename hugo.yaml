@@ -68,6 +68,7 @@ params:
     type: Organization
     name: AI Tools Hub
     url: https://aitools-hub.xyz/
+    logo: https://aitools-hub.xyz/apple-touch-icon.png
 
   # Edit post link (optional)
   editPost:
